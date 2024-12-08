@@ -13,6 +13,7 @@ public:
 
     static short memoryIndex;
     static bool running;
+    static bool memoryLimitReached;
 
     Memory* memory;
     CPU* processor;
@@ -21,7 +22,8 @@ public:
     void clearMemory();
     void displayStatus() const;
     void inputInstruction(const string&);
-
+    void setStartingAddress(const string&);
+    short memoryFileStartIndex;
 
     ~Machine();
     friend class MainWindow;

@@ -23,7 +23,7 @@ void Register::setCell(const int &address, const string &value) {
 string Register::getCell(const int &address) const {
     string value{"N/A"};
     try {
-        if (address < 0 || address > 255)
+        if (address < 0 || address > 15)
             throw out_of_range("Out of range! address must be between [0-15].");
         value = registers[address];
     }

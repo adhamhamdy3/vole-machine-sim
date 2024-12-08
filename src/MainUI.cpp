@@ -15,8 +15,9 @@ void MainUI::DisplayMenu() {
     cout << "1. Load File\n";
     cout << "2. Display Memory Status\n";
     cout << "3. Display Registers Status\n";
-    cout << "4. Input Instruction into console\n";
-    cout << "5. Exit\n";
+    cout << "4. Set New Starting Address\n";
+    cout << "5. Input Instruction into console\n";
+    cout << "6. Exit\n";
 }
 
 string MainUI::inputFileName() {

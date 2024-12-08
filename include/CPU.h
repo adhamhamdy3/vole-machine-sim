@@ -7,6 +7,7 @@
 #include "Memory.h"
 
 class CU;
+class ALU;
 class MainWindow;
 
 class CPU {
@@ -29,7 +30,9 @@ public:
     void displayRegisters() const;
     void clearRegister() const;
     void runOneCycle(Memory*);
+    friend class Machine;
     friend class CU;
+    friend class ALU;
     friend class MainWindow;
 };
 
